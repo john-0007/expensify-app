@@ -5,8 +5,8 @@ export const addExpense=({
   note        = "",
   amount      = 0,
   createdAt    = 0
-})=>({ 
-  type: "ADD_EXP",
+}={})=>({ 
+  type: "ADD_EXPENSE",
   expense:{
     id: uuid(),
     description,
@@ -20,8 +20,9 @@ export const removeExpense=({id}={})=>({
   id
 });
 //  Update Expense
-export const editExpense=(id,update)=>({
-  type: "EDIT_EXPENCE",
+export const editExpense=(id,updates)=>({
+  type: "EDIT_EXPENSE",
   id,
-  update
+  updates,
+ 
 })

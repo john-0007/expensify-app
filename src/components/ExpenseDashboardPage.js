@@ -1,8 +1,13 @@
 import React from "react"; 
+import ExpenseList from "./ExpensesList";
+import ExpenseListFilter from "./ExpenseListFilter";
+
 
 const ExpenseDashboardPage=()=>(
   <div>
-    This is from my dashborad component
+    <p>This is from my dashborad component</p>
+    <ExpenseListFilter />
+    <ExpenseList />
   </div>
 );
 
