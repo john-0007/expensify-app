@@ -5,7 +5,8 @@
   "author": "John Joseph",
   "license": "MIT",
   "scripts": {
-    "build": "webpack",
+    "build:dev": "webpack",
+    "build:prod": "webpack -p --env production",
     "serve": "live-server public/",
     "dev-server": "webpack-dev-server",
     "test": "jest --config=jest.config.json"
@@ -29,6 +30,7 @@
     "enzyme": "^3.0.0",
     "enzyme-adapter-react-16": "^1.0.0",
     "enzyme-to-json": "^3.0.1",
+    "extract-text-webpack-plugin": "^3.0.0",
     "express": "^4.15.4",
     "live-server": "^1.2.0",
     "moment": "^2.18.1",
