@@ -2,7 +2,7 @@
   "name": "expensify-app",
   "version": "1.0.0",
   "description": "",
-  "main": "index.js",
+  "main": "index.html",
   "dependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",
@@ -25,8 +25,8 @@
     "raf": "^3.3.2",
     "react": "^16.0.0",
     "react-addons-shallow-compare": "^15.6.0",
-    "react-dom": "^16.0.0",
     "react-dates": "^12.6.0",
+    "react-dom": "^16.0.0",
     "react-modal": "^2.2.2",
     "react-redux": "^5.0.5",
     "react-router-dom": "^4.1.2",
@@ -39,14 +39,14 @@
     "webpack-dev-server": "^2.5.1"
   },
   "devDependencies": {},
-  "scripts": {
+  "scripts":  {
     "serve": "live-server public/",
-    "build:dev":"webpack",
-    "build:prod":"webpack -p --env production",
-    "dev-server":"webpack-dev-server",
-    "test":"jest --config=jest.config.json",
+    "build:dev": "webpack",
+    "build:prod": "webpack -p --env production",
+    "dev-server": "webpack-dev-server",
+    "test": "jest --config=jest.config.json",
     "start": "node server/server.js",
-    "heroku-postbuild":"npm run build:prod"
+    "heroku-postbuild": "npm run build:prod"
   },
   "repository": {
     "type": "git",
