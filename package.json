@@ -1,39 +1,23 @@
 {
-  "name": "boilerplate",
+  "name": "expensify-app",
   "version": "1.0.0",
-  "main": "index.js",
-  "author": "John Joseph",
-  "license": "MIT",
-  "scripts": {
-    "build:dev": "webpack",
-    "build:prod": "webpack -p --env production",
-    "serve": "live-server public/",
-    "dev-server": "webpack-dev-server",
-    "test": "jest --config=jest.config.json",
-    "start": "node server/server.js",
-    "heroku-postbuild": "npm run build:prod" 
-  },
-  "repository": {
-    "type": "git",
-    "url": "git+https://github.com/john-0007/indecision-app.git"
-  },
-  "bugs": {
-    "url": "https://github.com/john-0007/indecision-app/issues"
-  },
-  "homepage": "https://github.com/john-0007/indecision-app#readme",
   "description": "",
+  "main": "index.js",
   "dependencies": {
     "babel-cli": "^6.24.1",
     "babel-core": "^6.25.0",
     "babel-loader": "^7.1.1",
+    "babel-plugin-transform-object-rest-spread": "^6.26.0",
     "babel-preset-env": "^1.5.2",
     "babel-preset-react": "^6.24.1",
+    "babel-preset-stage-2": "^6.24.1",
     "css-loader": "^0.28.4",
     "enzyme": "^3.0.0",
     "enzyme-adapter-react-16": "^1.0.0",
     "enzyme-to-json": "^3.0.1",
-    "extract-text-webpack-plugin": "^3.0.0",
     "express": "^4.15.4",
+    "extract-text-webpack-plugin": "^3.0.0",
+    "jest": "^20.0.4",
     "live-server": "^1.2.0",
     "moment": "^2.18.1",
     "node-sass": "^4.5.3",
@@ -41,8 +25,8 @@
     "raf": "^3.3.2",
     "react": "^16.0.0",
     "react-addons-shallow-compare": "^15.6.0",
-    "react-dates": "^12.6.0",
     "react-dom": "^16.0.0",
+    "react-dates": "^12.6.0",
     "react-modal": "^2.2.2",
     "react-redux": "^5.0.5",
     "react-router-dom": "^4.1.2",
@@ -54,10 +38,24 @@
     "webpack": "^3.1.0",
     "webpack-dev-server": "^2.5.1"
   },
-  "devDependencies": {
-    "babel-plugin-transform-object-rest-spread": "^6.26.0",
-    "babel-preset-stage-2": "^6.24.1",
-    "extract-text-webpack-plugin": "^3.0.0",
-    "jest": "^20.0.4"
-  }
+  "devDependencies": {},
+  "scripts": {
+    "serve": "live-server public/",
+    "build:dev":"webpack",
+    "build:prod":"webpack -p --env production",
+    "dev-server":"webpack-dev-server",
+    "test":"jest --config=jest.config.json",
+    "start": "node server/server.js",
+    "heroku-postbuild":"npm run build:prod"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/john-0007/expensify-app.git"
+  },
+  "author": "John Joseph",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/john-0007/expensify-app/issues"
+  },
+  "homepage": "https://github.com/john-0007/expensify-app#readme"
 }
