@@ -31,6 +31,7 @@
     "enzyme-adapter-react-16": "^1.0.0",
     "enzyme-to-json": "^3.0.1",
     "extract-text-webpack-plugin": "^3.0.0",
+    "express": "^4.15.4",
     "live-server": "^1.2.0",
     "moment": "^2.18.1",
     "node-sass": "^4.5.3",
