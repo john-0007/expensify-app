@@ -1,0 +1,16 @@
+.header{
+  background: $drak-blue;
+}
+.header__content{
+  align-content: center;
+  display: flex;
+  justify-content: space-between;
+  padding: $s-size 0;
+}
+.header__title{
+  color: #fff;
+  text-decoration: none;
+  h1 {
+    margin: 0;
+  }
+}
